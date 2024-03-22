@@ -1,5 +1,5 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "iransans";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,11 @@
     outline: none;
     transition: all .2s linear;
     transition: width none;
+}
+
+@font-face {
+    font-family: 'iransans';
+    src: url(./font/IranSans.ttf);
 }
 
 :root {
@@ -56,14 +61,20 @@ header-1
     padding: 1.5rem 9%;
 }
 
-.header .header-1 .logo {
+.header .header-1 .logos a {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-1 .logos .logo {
     font-size: 2.5rem;
     color: var(--black);
     font-weight: bolder;
 }
 
-.header .header-1 .logo i {
+.header .header-1 .logos .logo i {
     color: var(--green);
+    margin-right: 0.7rem;
 }
 
 .header .header-1 .search-form {
@@ -75,20 +86,23 @@ header-1
     background: #fff;
     border-radius: .5rem;
     overflow: hidden;
+    direction: rtl;
 }
 
 .header .header-1 .search-form input {
     width: 100%;
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 0 1.2rem;
     text-transform: none;
     color: var(--black);
     border: none;
+    direction: rtl;
 }
 
 .header .header-1 .search-form label {
-    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.3rem;
     font-size: 2.5rem;
     color: var(--black);
     cursor: pointer;
@@ -130,7 +144,7 @@ header-2
 }
 
 .header .header-2 .navbar a {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     color: #fff;
     padding: 1.2rem;
     display: inline-block;
@@ -194,6 +208,7 @@ header-2
     width: 40rem;
     padding: 15px;
     margin: 2rem;
+    direction: rtl;
 }
 
 .login-form-container form h3 {
@@ -253,7 +268,7 @@ header-2
 }
 
 .login-form-container form p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 8px;
 }
 
@@ -261,6 +276,7 @@ header-2
     text-decoration: underline;
     color: var(--green);
     font-weight: bold;
+    font-size: 1.4rem;
 }
 
 
@@ -348,6 +364,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
+    direction: rtl;
 }
 
 .home .row .content {
@@ -385,8 +402,7 @@ section {
 }
 
 .home .row .content p {
-    
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     
 }
@@ -427,6 +443,7 @@ icon section
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
+    direction: rtl;
 }
 
 .icon-container .icon-row {
@@ -442,13 +459,13 @@ icon section
 }
 
 .icon-container .icon-row h2 {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     margin-bottom: 3px;
 }
 
 .icon-container .icon-row h4 {
     color: var(--light-color);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 /*
@@ -538,6 +555,7 @@ featured section
 .featured-slider .box .content {
     background: #eee;
     padding: 1.5rem;
+    direction: rtl;
 }
 
 .featured-slider .box .content h3 {
@@ -601,7 +619,7 @@ newslatter section
 
 .newslatter form h3 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: normal;
     margin-bottom: 12px;
 }
@@ -614,12 +632,14 @@ newslatter section
     font-size: 1.6rem;
     color: var(--black);
     text-transform: none;
+    direction: rtl;
 }
 
 .newslatter form .btn {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 1.7rem;
 }
 
 
@@ -648,6 +668,7 @@ arrival section
     align-items: center;
     gap: 1.5rem;
     margin: 1rem .6rem;
+    direction: rtl;
 }
 
 .arrival-slider .row:hover {
@@ -656,6 +677,10 @@ arrival section
 
 .arrival-slider .row img {
     height: 15rem;
+}
+
+.arrival-slider .row .row-text {
+    direction: rtl;
 }
 
 .arrival-slider .row .row-text h2{
@@ -696,6 +721,7 @@ deal section
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    direction: rtl;
 }
 
 .deal-container .deal-text h3 {
@@ -711,7 +737,7 @@ deal section
 }
 
 .deal-container .deal-text p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 18px;
     line-height: 25px;
 }
