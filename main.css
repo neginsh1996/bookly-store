@@ -141,6 +141,7 @@ header-2
 
 .header .header-2 .navbar {
     text-align: center;
+    direction: rtl;
 }
 
 .header .header-2 .navbar a {
@@ -821,6 +822,7 @@ blog section
 
 .blog-slider .box .blog-text {
     padding: 15px 15px;
+    direction: rtl;
 }
 
 .blog-slider .box .blog-text h1 {
