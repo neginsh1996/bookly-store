@@ -173,6 +173,7 @@ header-2
     text-align: center;
     display: none;
     z-index: 1000;
+    direction: rtl;
 }
 
 .bottom-navbar a {
